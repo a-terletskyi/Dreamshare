@@ -16,7 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, hr {
   margin: 0;
   padding: 0;
   border: 0;
@@ -134,7 +134,7 @@ table {
 }
 
 .header_content {
-  width: 50%;
+  width: 60%;
   margin: 147px auto 0px;
   text-align: center;
 }
@@ -145,6 +145,7 @@ table {
   line-height: 63.39px;
   color: white;
   font-weight: 700;
+  letter-spacing: 0.9px;
   margin-bottom: 28px;
 }
 
@@ -167,5 +168,74 @@ table {
   border: none;
   border-radius: 40px;
   background-color: #ff4e50;
+  word-spacing: 3px;
+  cursor: pointer;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer hr {
+  width: 100%;
+  height: 2px;
+  background-color: #ff4e50;
+  margin-bottom: 36px;
+}
+
+.footer .container {
+  width: 80%;
+  margin: 0 auto 36px;
+}
+
+.footer h3 {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #ff4e50;
+  width: 35%;
+}
+
+.footer h6 {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: #444444;
+  font-weight: 700;
+  width: 25%;
+  margin-bottom: 11px;
+}
+
+.footer_company {
+  width: 40%;
+}
+
+.footer_company a {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 26px;
+  color: #999999;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.footer_design-logo {
+  text-align: end;
+  width: 20%;
+}
+
+.footer_design-logo p {
+  font-family: Montserrat;
+  font-size: 10px;
+  line-height: 12.19px;
+  color: #cccccc;
+  font-weight: 700;
+}
+
+.footer_design-logo img {
+  width: 110px;
 }
 /*# sourceMappingURL=main.css.map */
