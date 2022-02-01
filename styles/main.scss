@@ -6,6 +6,7 @@
 body {
     background-color: #f2f2f2;
 }
+
 .container {
     width: 65.4%;
     margin: 0 auto;
@@ -91,6 +92,11 @@ h2 {
     letter-spacing: 0.8px;
 }
 
+h6 {
+    @include text(Montserrat, 14px, 17.07px, #444444);
+    font-weight: 700;
+}
+
 .howWorks {
     margin-bottom: 95px;
 
@@ -152,6 +158,84 @@ h2 {
     }
 }
 
+.meet {
+    text-align: center;
+    margin-bottom: 95px;
+
+    &_partner {
+        width: 25%;
+        margin-right: 19px;
+
+        &_avatar {
+            position: relative;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 17px;
+
+            svg {
+                border-radius: 50%;
+                outline: 4px solid #f2f2f2;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        .bg1 {
+            background-image: url(./images/partner1.png);
+
+            svg {
+                background-color: #ff4e50;
+            }
+        }
+
+        .bg2 {
+            background-image: url(./images/partner2.png);
+
+            svg {
+                background-color: #19d4ca;
+            }
+        }
+
+        .bg3 {
+            background-image: url(./images/partner3.png);
+
+            svg {
+                background-color: #ffa710;
+            }
+        }
+
+        .bg4 {
+            background-image: url(./images/partner4.png);
+
+            svg {
+                background-color: #667df3;
+            }
+        }
+
+        h6 {
+            margin-bottom: 12px;
+        }
+
+        p {
+            @include text(Roboto, 14px, 14px, #666666);
+            margin-bottom: 36px;
+        }
+    }
+
+    &_partner:last-child {
+        margin-right: 0;
+    }
+
+    button {
+        @include square(180px, 40px, #f2f2f2);
+        @include text(Montserrat, 14px, 17.07px, #ff4e50);
+        font-weight: 700;
+        border-radius: 40px;
+        border: 2px solid #ff4e50;
+    }
+}
 .footer {
     hr {
         @include square(100%, 2px, #ff4e50);
@@ -168,8 +252,6 @@ h2 {
     }
 
     h6 {
-        @include text(Montserrat, 14px, 17.07px, #444444);
-        font-weight: 700;
         width: 25%;
         margin-bottom: 11px;
     }
