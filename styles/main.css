@@ -54,10 +54,6 @@ table {
   border-spacing: 0;
 }
 
-body {
-  background-color: #f2f2f2;
-}
-
 .container {
   width: 65.4%;
   margin: 0 auto;
@@ -369,7 +365,7 @@ h6 {
 .meet button {
   width: 180px;
   height: 40px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   font-family: Montserrat;
   font-size: 14px;
   line-height: 17.07px;
@@ -456,6 +452,55 @@ h6 {
 
 .ideas .trevelling {
   background-image: url(images/trevelling.png);
+}
+
+.interests {
+  margin-bottom: 100px;
+}
+
+.interests h2 {
+  margin-bottom: 43px;
+}
+
+.interests form {
+  text-align: center;
+}
+
+.interests form legend {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 14px;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+.interests form input {
+  width: 299px;
+  height: 40px;
+  background-color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16.41px;
+  color: #999999;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  padding: 14px 14px 10px;
+  margin: 0px 10px 0 0;
+}
+
+.interests form button {
+  width: 172px;
+  height: 40px;
+  background-color: #ff4e50;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 0;
 }
 
 .footer hr {
