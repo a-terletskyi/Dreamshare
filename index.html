@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- correctly -->
     <header class="header">
         <div class="container">
             <div class="header_menu">
@@ -24,9 +25,7 @@
             <div class="header_content">
                 <h1>SHARE YOUR HOLIDAY DREAM</h1>
                 <p>And find the perfect partner to fullfill it</p>
-                <div class="button">
-                    <button type="button">Find your holiday partner</button>
-                </div>
+                <a href="#search">Find your holiday partner</a>
             </div>
         </div>
     </header>
@@ -137,7 +136,9 @@
                     <h3>Wellness and Health</h3>
                 </div>
                 <div class="ideas_block extreme">
-                    <h3>Extreme Sports and Expeditions</h3>
+                    <h3>Extreme Sports
+                        <hr> and Expeditions
+                    </h3>
                 </div>
                 <div class="ideas_block games">
                     <h3>Games</h3>
@@ -153,15 +154,17 @@
                 </div>
             </div>
         </section>
+
+        <!-- correctly -->
         <section class="interests">
-            <h2>Crate your holiday activity</h2>
+            <h2 class="interests__section-heading">Crate your holiday activity</h2>
             <div class="container">
-                <form action="" method="">
-                    <legend>Hi! What are your holiday interests?</legend>
+                <form class="search-form" action="" method="" id="search">
+                    <legend class="search-form__title">Hi! What are your holiday interests?</legend>
                     <div class="search">
-                        <input type="search" id="mySearch" placeholder="Enter your insterests" pattern="[^0-9]{3,}"
-                            title="No numbers, more than 3 characters">
-                        <button type="button">Search partners</button>
+                        <input class="search__input" type="search" id="mySearch" name="s" placeholder="Enter your insterests"
+                            pattern="[^0-9]{3,}" title="No numbers, more than 3 characters">
+                        <button class="search__btn" type="submit">Search partners</button>
                     </div>
                 </form>
             </div>
@@ -173,13 +176,14 @@
             <h3>DREAMSHARE</h3>
             <div class="footer_company">
                 <h6>Company</h6>
+                <a href="#">About</a href="#">
                 <a href="#">Contact</a href="#">
                 <a href="#">Press</a href="#">
                 <a href="#">Blog</a href="#">
                 <a href="#">Terms and Privacy</a href="#">
                 <a href="#">Help</a href="#">
             </div>
-            <h6>Partners</h6>
+            <h6 class="footer_partners">Partners</h6>
             <div class="footer_design-logo">
                 <p>DESIGNED BY</p>
                 <img src="styles/icons/Bitmap logo.png" alt="logo of the Areto development">
