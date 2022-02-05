@@ -18,8 +18,7 @@
     background-color: $bg-color;
 }
 
-@mixin background($bg-img) {
-    background-image: url($bg-img);
+@mixin background {
     background-repeat: no-repeat;
     background-size: cover;
 }

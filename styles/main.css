@@ -59,6 +59,16 @@ body .container {
   margin: 0 auto;
 }
 
+body .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-mb {
+  margin-bottom: 89px;
+}
+
 body h2 {
   font-family: Montserrat;
   font-size: 26px;
@@ -82,18 +92,11 @@ body a {
   text-decoration: none;
 }
 
-.d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .header {
-  background-image: url("./images/Background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
-  margin-bottom: 89px;
+  background-image: url(./images/Background.png);
+  min-height: 700px;
 }
 
 .header_menu {
@@ -169,7 +172,7 @@ body a {
   text-align: center;
 }
 
-.header_content h1 {
+.header_content__heading {
   font-family: Montserrat;
   font-size: 52px;
   line-height: 63.39px;
@@ -179,7 +182,7 @@ body a {
   letter-spacing: 0.9px;
 }
 
-.header_content p {
+.header_content__text {
   font-family: Roboto;
   font-size: 24px;
   line-height: 24.5px;
@@ -188,7 +191,7 @@ body a {
   margin-bottom: 35px;
 }
 
-.header_content a {
+.header_content__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,33 +214,32 @@ body a {
   word-spacing: 3px;
 }
 
-.howWorks {
-  margin-bottom: 89px;
-}
-
 .howWorks_step {
-  max-width: 31.9%;
-  min-height: 400px;
-  border-radius: 4px;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-right: 20px;
+  width: 31.9%;
+  min-height: 400px;
   padding: 21px 25px;
+  margin-right: 20px;
+  border-radius: 4px;
 }
 
-.howWorks_step button {
+.howWorks_step__btn {
   width: 70px;
   height: 20px;
   background-color: #ff4e50;
@@ -252,7 +254,7 @@ body a {
   letter-spacing: 2px;
 }
 
-.howWorks_step h3 {
+.howWorks_step__title {
   font-family: Montserrat;
   font-size: 24px;
   line-height: 26px;
@@ -262,7 +264,7 @@ body a {
   letter-spacing: 0.6px;
 }
 
-.howWorks_step p {
+.howWorks_step__text {
   font-family: Roboto;
   font-size: 14px;
   line-height: 14px;
@@ -282,11 +284,11 @@ body a {
   background-image: url(./images/Step2.png);
 }
 
-.howWorks .bg2 button {
+.howWorks .bg2 .howWorks_step__btn {
   margin-bottom: 23px;
 }
 
-.howWorks .bg2 h3 {
+.howWorks .bg2 .howWorks_step__title {
   margin-bottom: 17px;
 }
 
@@ -296,10 +298,9 @@ body a {
 
 .meet {
   text-align: center;
-  margin-bottom: 89px;
 }
 
-.meet h2 {
+.meet__heading {
   letter-spacing: 0.7px;
 }
 
@@ -312,60 +313,48 @@ body a {
   margin-right: 19px;
 }
 
-.meet_partner_avatar {
-  position: relative;
-  border-radius: 50%;
+.meet_partner_box {
   width: 120px;
   height: 120px;
+  background-color: #ffffff;
+  position: relative;
   margin: 0 auto 20px;
 }
 
-.meet_partner_avatar svg {
+.meet_partner_box__avatar {
+  border-radius: 50%;
+}
+
+.meet_partner_box__icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   border-radius: 50%;
   outline: 4px solid #ffffff;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
-.meet_partner .bg1 {
-  background-image: url(./images/partner1.png);
-}
-
-.meet_partner .bg1 svg {
+.meet_partner_box .icon-color1 {
   background-color: #ff4e50;
 }
 
-.meet_partner .bg2 {
-  background-image: url(./images/partner2.png);
-}
-
-.meet_partner .bg2 svg {
+.meet_partner_box .icon-color2 {
   background-color: #19d4ca;
 }
 
-.meet_partner .bg3 {
-  background-image: url(./images/partner3.png);
-}
-
-.meet_partner .bg3 svg {
+.meet_partner_box .icon-color3 {
   background-color: #ffa710;
 }
 
-.meet_partner .bg4 {
-  background-image: url(./images/partner4.png);
-}
-
-.meet_partner .bg4 svg {
+.meet_partner_box .icon-color4 {
   background-color: #667df3;
 }
 
-.meet_partner h6 {
+.meet_partner__title {
   margin-bottom: 21px;
   letter-spacing: 0.4px;
 }
 
-.meet_partner p {
+.meet_partner__text {
   font-family: Roboto;
   font-size: 14px;
   line-height: 14px;
@@ -378,7 +367,7 @@ body a {
   margin-right: 0;
 }
 
-.meet button {
+.meet__btn {
   width: 180px;
   height: 40px;
   background-color: #ffffff;
@@ -394,10 +383,6 @@ body a {
   cursor: pointer;
 }
 
-.ideas {
-  margin-bottom: 89px;
-}
-
 .ideas .container {
   display: -ms-grid;
   display: grid;
@@ -408,7 +393,7 @@ body a {
   gap: 20px;
 }
 
-.ideas_block {
+.ideas_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,15 +403,15 @@ body a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  height: 310px;
-  border-radius: 4px;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 310px;
   padding: 20px;
+  border-radius: 4px;
+  text-align: center;
 }
 
-.ideas_block h3 {
+.ideas_box__title {
   font-family: Montserrat;
   font-size: 22px;
   line-height: 26.82px;
@@ -477,7 +462,7 @@ body a {
   margin-bottom: 100px;
 }
 
-.interests__section-heading {
+.interests__heading {
   margin-bottom: 53px;
 }
 
@@ -529,7 +514,7 @@ body a {
   cursor: pointer;
 }
 
-.footer hr {
+.footer .h-line {
   width: 100%;
   height: 2px;
   background-color: #ff4e50;
@@ -538,12 +523,13 @@ body a {
 
 .footer .container {
   margin: 0 auto 36px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.footer h3 {
+.footer .box-width {
+  width: 25%;
+}
+
+.footer .logo__link {
   font-family: Montserrat;
   font-size: 16px;
   line-height: 19.5px;
@@ -551,16 +537,15 @@ body a {
   color: #ff4e50;
 }
 
-.footer h6 {
+.footer .company {
+  padding-left: 6px;
+}
+
+.footer .company__title, .footer .partners__title {
   margin: 2px 0 11px 0;
-  width: 24.7%;
 }
 
-.footer .footer_partners {
-  padding-left: 4px;
-}
-
-.footer_company a {
+.footer .company__link {
   font-family: Roboto;
   font-size: 14px;
   line-height: 26px;
@@ -569,11 +554,15 @@ body a {
   display: block;
 }
 
-.footer_design-logo {
+.footer .partners {
+  padding-left: 10px;
+}
+
+.footer .designed {
   text-align: end;
 }
 
-.footer_design-logo p {
+.footer .designed__text {
   font-family: Montserrat;
   font-size: 10px;
   line-height: 12.19px;
@@ -583,7 +572,7 @@ body a {
   letter-spacing: 1px;
 }
 
-.footer_design-logo img {
+.footer .designed__logo {
   width: 110px;
 }
 /*# sourceMappingURL=main.css.map */
