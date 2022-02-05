@@ -240,15 +240,15 @@ body a {
 }
 
 .howWorks_step__btn {
-  width: 70px;
-  height: 20px;
-  background-color: #ff4e50;
   font-family: Montserrat;
   font-size: 10px;
   line-height: 12.19px;
   font-weight: 400;
   color: #ffffff;
+  width: 70px;
+  padding: 5px 0px 3px 2px;
   margin-bottom: 21px;
+  background-color: #ff4e50;
   border: none;
   border-radius: 40px;
   letter-spacing: 2px;
@@ -368,15 +368,14 @@ body a {
 }
 
 .meet__btn {
-  width: 180px;
-  height: 40px;
-  background-color: #ffffff;
   font-family: Montserrat;
   font-size: 14px;
   line-height: 17.07px;
   font-weight: 700;
   color: #ff4e50;
-  padding-left: 12px;
+  width: 180px;
+  padding: 10px 0px 8px 7px;
+  background-color: #ffffff;
   border: 2px solid #ff4e50;
   border-radius: 40px;
   letter-spacing: 0.3px;
@@ -479,7 +478,7 @@ body a {
 }
 
 .interests .search-form .search {
-  margin-top: 25px;
+  margin-top: 26px;
 }
 
 .interests .search-form .search__input {
@@ -498,16 +497,15 @@ body a {
 }
 
 .interests .search-form .search__btn {
-  width: 172px;
-  height: 40px;
-  background-color: #ff4e50;
   font-family: Montserrat;
   font-size: 14px;
   line-height: 17.07px;
   font-weight: 700;
   color: #ffffff;
-  padding: 14px 0px 10px 6px;
-  margin-right: 4px;
+  width: 172px;
+  padding: 13px 0px 10px 6px;
+  margin-right: 3px;
+  background-color: #ff4e50;
   border: none;
   border-radius: 40px;
   letter-spacing: 0.5px;
