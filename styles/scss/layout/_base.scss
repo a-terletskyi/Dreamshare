@@ -1,31 +1,36 @@
 * {
     box-sizing: border-box;
+}
 
-    .container {
-        width: 65.4%;
-        margin: 0 auto;
-    }
+::selection {
+    color: #ffffff;
+    background-color: #ffa710;
+}
 
-    .d-flex {
-        display: flex;
-    }
+.container {
+    width: 65.4%;
+    margin: 0 auto;
+}
 
-    .section-mb {
-        margin-bottom: 89px;
-    }
+.d-flex {
+    display: flex;
+}
 
-    h2 {
-        @include text(Montserrat, 26px, 31.69px, 700, #444444);
-        margin-bottom: 35px;
-        text-align: center;
-        letter-spacing: 0.8px;
-    }
+.section-mb {
+    margin-bottom: 89px;
+}
 
-    h6 {
-        @include text(Montserrat, 14px, 17.07px, 700, #444444);
-    }
+h2 {
+    @include text(Montserrat, 26px, 31.69px, 700, #444444);
+    margin-bottom: 35px;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
 
-    a {
-        text-decoration: none;
-    }
+h6 {
+    @include text(Montserrat, 14px, 17.07px, 700, #444444);
+}
+
+a {
+    text-decoration: none;
 }

@@ -63,22 +63,32 @@ table {
           box-sizing: border-box;
 }
 
-* .container {
+::-moz-selection {
+  color: #ffffff;
+  background-color: #ffa710;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #ffa710;
+}
+
+.container {
   width: 65.4%;
   margin: 0 auto;
 }
 
-* .d-flex {
+.d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-* .section-mb {
+.section-mb {
   margin-bottom: 89px;
 }
 
-* h2 {
+h2 {
   font-family: Montserrat;
   font-size: 26px;
   line-height: 31.69px;
@@ -89,7 +99,7 @@ table {
   letter-spacing: 0.8px;
 }
 
-* h6 {
+h6 {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 17.07px;
@@ -97,7 +107,7 @@ table {
   color: #444444;
 }
 
-* a {
+a {
   text-decoration: none;
 }
 
@@ -221,6 +231,10 @@ table {
   margin: 0 auto;
   border-radius: 40px;
   word-spacing: 3px;
+}
+
+.header_content__link:hover {
+  outline: 1.5px solid #ff4e50;
 }
 
 .footer .h-line {
@@ -460,6 +474,13 @@ table {
   border: 2px solid #ff4e50;
   border-radius: 40px;
   letter-spacing: 0.3px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.meet__btn:hover {
+  background-color: #ff4e50;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -578,6 +599,10 @@ table {
   border-radius: 3px;
 }
 
+.interests .search-form .search__input:hover, .interests .search-form .search__input:focus {
+  outline: 1px solid #d4d4d4;
+}
+
 .interests .search-form .search__btn {
   font-family: Montserrat;
   font-size: 14px;
@@ -591,6 +616,10 @@ table {
   border: none;
   border-radius: 40px;
   letter-spacing: 0.5px;
+}
+
+.interests .search-form .search__btn:hover {
+  outline: 1.5px solid #ff4e50;
   cursor: pointer;
 }
 

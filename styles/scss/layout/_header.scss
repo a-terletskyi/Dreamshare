@@ -54,5 +54,9 @@
             border-radius: $br-radius;
             word-spacing: 3px;
         }
+
+        &__link:hover {
+            outline: 1.5px solid #ff4e50;
+        }
     }
 }
