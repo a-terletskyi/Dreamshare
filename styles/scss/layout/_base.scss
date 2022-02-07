@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+
+    .container {
+        width: 65.4%;
+        margin: 0 auto;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .section-mb {
+        margin-bottom: 89px;
+    }
+
+    h2 {
+        @include text(Montserrat, 26px, 31.69px, 700, #444444);
+        margin-bottom: 35px;
+        text-align: center;
+        letter-spacing: 0.8px;
+    }
+
+    h6 {
+        @include text(Montserrat, 14px, 17.07px, 700, #444444);
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

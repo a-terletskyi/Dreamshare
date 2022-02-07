@@ -1,0 +1,49 @@
+@media screen and (max-width: 992px) {
+    .header {
+        .container {
+            width: 87.1%;
+        }
+
+        &_menu_account {
+            padding-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        min-height: 540px;
+
+        &_menu {
+            flex-direction: column-reverse;
+            padding-top: 21px;
+
+            &_account {
+                margin-bottom: 97px;
+            }
+
+            &_logo {
+                letter-spacing: 0.5px;
+            }
+        }
+
+        &_content {
+            margin: 26px auto 0px;
+
+            &__heading {
+                margin-bottom: 6px;
+                font-size: 30px;
+                line-height: 36.57px;
+            }
+
+            &__text {
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+
+            &__link {
+                width: 280px;
+            }
+        }
+    }
+}

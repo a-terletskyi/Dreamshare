@@ -1,0 +1,55 @@
+.footer {
+    .h-line {
+        @include square(100%, 2px, #ff4e50);
+        margin-bottom: 36px;
+    }
+
+    .container {
+        margin: 0 auto 36px;
+    }
+
+    .box-width {
+        width: 25%;
+    }
+
+    .logo {
+        &__link {
+            @include text(Montserrat, 16px, 19.5px, 400, #ff4e50);
+        }
+    }
+
+    .company {
+        padding-left: 6px;
+
+        &__title {
+            margin: 2px 0 11px 0;
+        }
+
+        .items__link {
+            @include text(Roboto, 14px, 26px, 300, #999999);
+            display: block;
+        }
+    }
+
+    .partners {
+        padding-left: 10px;
+
+        &__title {
+            @extend .company__title;
+        }
+    }
+
+    .designed {
+        text-align: end;
+
+        &__text {
+            @include text(Montserrat, 10px, 12.19px, 700, #cccccc);
+            margin: 2px 0 7px 0;
+            letter-spacing: 1px;
+        }
+
+        &__logo {
+            width: 110px;
+        }
+    }
+}

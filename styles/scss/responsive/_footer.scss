@@ -1,0 +1,65 @@
+@media screen and (max-width: 992px) {
+    footer {
+        .container {
+            width: 89.8%;
+        }
+
+        .company {
+            padding-left: 55px;
+        }
+
+        .partners {
+            padding-left: 53px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        .h-line {
+            margin-bottom: 20px;
+        }
+
+        .d-flex {
+            display: block;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 13px;
+        }
+
+        .box-width {
+            width: 100%;
+        }
+
+        .company {
+            padding: 0;
+            margin-bottom: 7px;
+
+            &__title {
+                margin: 0;
+            }
+
+            .items {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                &__link {
+                    margin: 0 7px;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .partners {
+            padding: 0;
+            margin-bottom: 13px;
+        }
+
+        .designed {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@media screen and (max-width: 992px) {
+    .ideas {
+        .sport {
+            background-image: url(/styles/images/sport-tablet.png);
+        }
+
+        .healath {
+            background-image: url(/styles/images/healath-tablet.png);
+        }
+
+        .extreme {
+            background-image: url(/styles/images/extreme-tablet.png);
+        }
+
+        .games {
+            background-image: url(/styles/images/games-tablet.png);
+        }
+
+        .culture {
+            background-image: url(/styles/images/culture-tablet.png);
+        }
+
+        .enjomet {
+            background-image: url(/styles/images/enjomet-tablet.png);
+        }
+
+        .trevelling {
+            background-image: url(/styles/images/trevelling-tablet.png);
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ideas {
+        .container {
+            display: block;
+            width: 93.9%;
+        }
+
+        &__heading {
+            padding: 0 30px;
+            margin-bottom: 28px;
+        }
+
+        &_box {
+            min-height: 120px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .sport {
+            padding: 0 50px;
+            background-image: url(/styles/images/sport-mobile.png);
+        }
+
+        .healath {
+            padding: 0 50px;
+            background-image: url(/styles/images/healath-mobile.png);
+        }
+
+        .extreme {
+            background-image: url(/styles/images/extreme-mobile.png);
+        }
+
+        .games {
+            background-image: url(/styles/images/games-mobile.png);
+        }
+
+        .culture {
+            background-image: url(/styles/images/culture-mobile.png);
+        }
+
+        .enjomet {
+            background-image: url(/styles/images/enjomet-mobile.png);
+        }
+
+        .trevelling {
+            background-image: url(/styles/images/trevelling-mobile.png);
+        }
+    }
+}

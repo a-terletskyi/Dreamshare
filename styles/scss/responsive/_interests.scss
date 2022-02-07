@@ -1,0 +1,36 @@
+@media screen and (max-width: 992px) {
+    .interests {
+        &__heading {
+            margin-bottom: 50px;
+        }
+
+        .search-form .search {
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .interests {
+        margin-bottom: 40px;
+
+        &__heading {
+            padding: 0 10px;
+            margin-bottom: 14px;
+        }
+
+        .search-form .search {
+            margin-top: 15px;
+
+            &__input {
+                width: 280px;
+                margin: 0 0 10px 0;
+            }
+
+            &__btn {
+                width: 280px;
+                margin-right: 0;
+            }
+        }
+    }
+}

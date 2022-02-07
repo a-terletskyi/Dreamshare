@@ -1,0 +1,23 @@
+@media screen and (max-width: 992px) {
+    .section-mb {
+        margin-bottom: 91px;
+    }
+
+    .container {
+        width: 97.3%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-mb {
+        margin-bottom: 31px;
+    }
+
+    h2 {
+        margin-bottom: 11px;
+    }
+}
