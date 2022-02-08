@@ -50,12 +50,12 @@ table {
 
 @font-face {
   font-family: "Montserrat";
-  src: url(/styles/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(/styles/fonts/Roboto/Roboto-Light.ttf);
+  src: url(fonts/Roboto/Roboto-Light.ttf);
 }
 
 * {
@@ -733,16 +733,16 @@ a {
     letter-spacing: 0.2px;
   }
   .howWorks .bg1 {
-    background-image: url(/styles/images/Step1-mobile.png);
+    background-image: url(images/Step1-mobile.png);
   }
   .howWorks .bg2 {
-    background-image: url(/styles/images/Step2-mobile.png);
+    background-image: url(images/Step2-mobile.png);
   }
   .howWorks .bg2 .howWorks_step__btn {
     margin-bottom: 29px;
   }
   .howWorks .bg3 {
-    background-image: url(/styles/images/Step3-mobile.png);
+    background-image: url(images/Step3-mobile.png);
   }
 }
 
@@ -835,25 +835,25 @@ a {
 
 @media screen and (max-width: 992px) {
   .ideas .sport {
-    background-image: url(/styles/images/sport-tablet.png);
+    background-image: url(images/sport-tablet.png);
   }
   .ideas .healath {
-    background-image: url(/styles/images/healath-tablet.png);
+    background-image: url(images/healath-tablet.png);
   }
   .ideas .extreme {
-    background-image: url(/styles/images/extreme-tablet.png);
+    background-image: url(images/extreme-tablet.png);
   }
   .ideas .games {
-    background-image: url(/styles/images/games-tablet.png);
+    background-image: url(images/games-tablet.png);
   }
   .ideas .culture {
-    background-image: url(/styles/images/culture-tablet.png);
+    background-image: url(images/culture-tablet.png);
   }
   .ideas .enjomet {
-    background-image: url(/styles/images/enjomet-tablet.png);
+    background-image: url(images/enjomet-tablet.png);
   }
   .ideas .trevelling {
-    background-image: url(/styles/images/trevelling-tablet.png);
+    background-image: url(images/trevelling-tablet.png);
   }
 }
 
@@ -873,26 +873,26 @@ a {
   }
   .ideas .sport {
     padding: 0 50px;
-    background-image: url(/styles/images/sport-mobile.png);
+    background-image: url(images/sport-mobile.png);
   }
   .ideas .healath {
     padding: 0 50px;
-    background-image: url(/styles/images/healath-mobile.png);
+    background-image: url(images/healath-mobile.png);
   }
   .ideas .extreme {
-    background-image: url(/styles/images/extreme-mobile.png);
+    background-image: url(images/extreme-mobile.png);
   }
   .ideas .games {
-    background-image: url(/styles/images/games-mobile.png);
+    background-image: url(images/games-mobile.png);
   }
   .ideas .culture {
-    background-image: url(/styles/images/culture-mobile.png);
+    background-image: url(images/culture-mobile.png);
   }
   .ideas .enjomet {
-    background-image: url(/styles/images/enjomet-mobile.png);
+    background-image: url(images/enjomet-mobile.png);
   }
   .ideas .trevelling {
-    background-image: url(/styles/images/trevelling-mobile.png);
+    background-image: url(images/trevelling-mobile.png);
   }
 }
 
