@@ -1,0 +1,39 @@
+.search-form {
+    text-align: center;
+
+    &__title {
+        @include setTextStyles(Roboto, 18px, 14px, 300, #666666);
+    }
+
+    .search {
+        margin-top: 26px;
+
+        &__input {
+            @include square(299px, 40px, #ffffff);
+            padding: 14px 14px 10px;
+            margin: 0px 8px 0 0;
+            vertical-align: middle;
+            @include setTextStyles(Roboto, 14px, 16px, 300, #999999);
+            border: 1px solid #d4d4d4;
+            border-radius: 3px;
+        }
+
+        &__input:hover,
+        &__input:focus {
+            outline: 1px solid #d4d4d4;
+        }
+    }
+}
+
+@include responsive(small) {
+    .search-form {
+        .search {
+            margin-top: 15px;
+
+            &__input {
+                width: 280px;
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+}

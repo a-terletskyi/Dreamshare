@@ -1,0 +1,84 @@
+.header_content__btn {
+    padding: 10px 20px;
+    background-color: $secondaty-color;
+    @include setTextStyles(Montserrat, 14px, 17px, 700, $main-text-color);
+}
+
+.header_content__btn:active {
+    background-color: $btn-hoverColor;
+    border: none;
+    outline: 3px solid $btn-hoverColor;
+}
+
+.signIn__btn {
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0);
+    @include setTextStyles(Montserrat, 14px, 17px, 400, $main-text-color);
+    border: 2px solid #ffffff;
+}
+
+.signIn__btn:active {
+    outline: 1px solid #ffffff;
+}
+
+.logIn__btn {
+    @extend .signIn__btn;
+    padding: 8px 19px;
+    border: none;
+}
+
+.logIn__btn:active {
+    outline: none;
+    font-weight: bold;
+}
+
+.step__btn {
+    padding: 4px 12px;
+    margin-bottom: 21px;
+    background-color: $secondaty-color;
+    @include setTextStyles(Montserrat, 10px, 12px, 400, $main-text-color);
+    border: none;
+    letter-spacing: 2px;
+}
+
+.step__btn:hover {
+    cursor: default;
+}
+
+.meet__btn {
+    padding: 9px 20px;
+    @include setTextStyles(Montserrat, 14px, 17px, 700, $secondaty-color);
+    background-color: #ffffff;
+    transition: all 0.3s;
+}
+
+.meet__btn:hover {
+    color: #ffffff;
+    background-color: $secondaty-color;
+}
+
+.search__btn {
+    @extend .header_content__btn;
+    padding: 11px 26px;
+    border: none;
+}
+
+@media screen and (min-width: 577px) and (max-width:700px) {
+    .howWorks__steps button.step__btn {
+        margin-bottom: 15px;
+    }
+}
+
+@include responsive(small) {
+    .header_content__btn {
+        padding: 10px 44px;
+    }
+
+    .meet__btn {
+        padding: 9px 71px;
+    }
+
+    .search__btn {
+        padding: 11px 82px;
+    }
+}

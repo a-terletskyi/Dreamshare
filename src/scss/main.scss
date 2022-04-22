@@ -1,0 +1,21 @@
+@import // base
+"./base/reset",
+"./base/fonts";
+
+@import //utils
+"./utils/variables",
+"./utils/mixins";
+
+@import //components
+"./components/buttons",
+"./components/steps",
+"./components/partners",
+"./components/form",
+"./components/grid";
+
+@import //layout
+"./layout/header",
+"./layout/footer";
+
+@import //pages
+"./pages/home";

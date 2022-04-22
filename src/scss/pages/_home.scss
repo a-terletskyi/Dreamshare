@@ -1,0 +1,91 @@
+h2 {
+    margin-bottom: 35px;
+    @include setTextStyles(Montserrat, 26px, 31px, 700, #444444);
+    text-align: center;
+}
+
+h6 {
+    @include setTextStyles(Montserrat, 14px, 17px, 700, #444444);
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 65.4%;
+    margin: 0 auto;
+}
+
+.mb-89 {
+    margin-bottom: 89px;
+}
+
+.meet {
+    text-align: center;
+
+    .container {
+        width: 94%;
+    }
+
+    &__heading {
+        margin-bottom: 27px;
+    }
+}
+
+.interests {
+    margin-bottom: 100px;
+
+    &__heading {
+        margin-bottom: 53px;
+    }
+
+}
+
+@include responsive(large) {
+    h2 {
+        font-size: 22px;
+    }
+
+    .container {
+        width: 97.3%;
+    }
+
+    .mb-89 {
+        margin-bottom: 91px;
+    }
+
+    .interests__heading {
+        margin-bottom: 50px;
+    }
+}
+
+@include responsive(medium) {
+    .meet__heading {
+        margin-bottom: 24px;
+    }
+}
+
+@include responsive(small) {
+    h2 {
+        margin-bottom: 11px;
+    }
+
+    .mb-89 {
+        margin-bottom: 31px;
+    }
+
+    .meet__heading {
+        margin-bottom: 12px;
+    }
+
+    .interests {
+        margin-bottom: 40px;
+
+        &__heading {
+            padding: 0 10px;
+            margin-bottom: 17px;
+        }
+    }
+}

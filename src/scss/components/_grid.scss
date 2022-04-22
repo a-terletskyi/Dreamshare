@@ -1,0 +1,136 @@
+.ideas {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+
+        .block {
+            @include d-flex(center, center);
+            min-height: 310px;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+
+            &__title {
+                @include setTextStyles(Montserrat, 22px, 26px, 700, $main-text-color);
+            }
+        }
+
+        .sport {
+            @include background('@img/sport.png');
+        }
+
+        .health {
+            @include background('@img/healath.png');
+        }
+
+        .extreme {
+            @include background('@img/extreme.png');
+        }
+
+        .games {
+            @include background('@img/games.png');
+        }
+
+        .culture {
+            grid-row: 2;
+            grid-column: 2 / 4;
+            @include background('@img/culture.png');
+        }
+
+        .enjomet {
+            grid-row: 3;
+            grid-column: 1 / 3;
+            @include background('@img/enjomet.png');
+        }
+
+        .trevelling {
+            @include background('@img/trevelling.png');
+        }
+    }
+}
+
+@include responsive(large) {
+    .ideas {
+        .container {
+            .sport {
+                background-image: url('@img/sport-tablet.png');
+            }
+
+            .health {
+                background-image: url('@img/healath-tablet.png');
+            }
+
+            .extreme {
+                background-image: url('@img/extreme-tablet.png');
+            }
+
+            .games {
+                background-image: url('@img/games-tablet.png');
+            }
+
+            .culture {
+                background-image: url('@img/culture-tablet.png');
+            }
+
+            .enjomet {
+                background-image: url('@img/enjomet-tablet.png');
+            }
+
+            .trevelling {
+                background-image: url('@img/trevelling-tablet.png');
+            }
+        }
+    }
+}
+
+@include responsive(small) {
+    .ideas {
+        &__heading {
+            padding: 0 30px;
+            margin-bottom: 28px;
+        }
+
+        .container {
+            display: block;
+            width: 93.9%;
+
+            .block {
+                min-height: 120px;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+
+            .sport {
+                padding: 0 50px;
+                background-image: url('@img/sport-mobile.png');
+            }
+
+            .health {
+                padding: 0 50px;
+                background-image: url('@img/healath-mobile.png');
+            }
+
+            .extreme {
+                background-image: url('@img/extreme-mobile.png');
+            }
+
+            .games {
+                background-image: url('@img/games-mobile.png');
+            }
+
+            .culture {
+                background-image: url('@img/culture-mobile.png');
+            }
+
+            .enjomet {
+                background-image: url('@img/enjomet-mobile.png');
+            }
+
+            .trevelling {
+                background-image: url('@img/trevelling-mobile.png');
+            }
+        }
+    }
+}

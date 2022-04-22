@@ -1,0 +1,75 @@
+.header {
+    min-height: 700px;
+    @include background ('@img/Background.png');
+
+    &_menu {
+        @include d-flex(space-between, center);
+        padding-top: 40px;
+
+        &_logo__link {
+            @include setTextStyles(Montserrat, 20px, 24px, 700, $main-text-color);
+        }
+
+        &_account {
+            @include d-flex(center, center);
+            padding-right: 42px;
+        }
+    }
+
+    &_content {
+        margin: 147px auto 0;
+        text-align: center;
+
+        &__heading {
+            margin-bottom: 29px;
+            @include setTextStyles(Montserrat, 52px, 63px, 700, $main-text-color);
+        }
+
+        &__text {
+            margin-bottom: 33px;
+            @include setTextStyles(Roboto, 24px, 24.5px, 300, $main-text-color);
+        }
+    }
+}
+
+@include responsive(large) {
+    .header {
+        .container {
+            width: 87.1%;
+        }
+
+        &_menu_account {
+            padding-right: 0;
+        }
+    }
+}
+
+@include responsive(small) {
+    .header {
+        min-height: 540px;
+
+        &_menu {
+            flex-direction: column-reverse;
+            padding-top: 21px;
+
+            &_account {
+                margin: 0 15px 97px 0;
+            }
+        }
+
+        &_content {
+            margin: 26px auto 0;
+
+            &__heading {
+                margin-bottom: 6px;
+                font-size: 30px;
+                line-height: 36px;
+            }
+
+            &__text {
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+        }
+    }
+}
